@@ -18,15 +18,13 @@
 [![arxiv](https://img.shields.io/badge/arXiv_2510.00405-red?logo=arxiv)](https://arxiv.org/abs/2510.00405)
 [![paper](https://img.shields.io/badge/Paper-PDF-0065D3?logo=readthedocs&logoColor=white)](https://arxiv.org/pdf/2510.00405?)
 [![code](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/zoeyliu1999/EgoTraj-Bench)
-[![video-en](https://img.shields.io/badge/YouTube-D33846?logo=youtube)](https://youtu.be/5MKlijK1gKI)
+[![video-en](https://img.shields.io/badge/YouTube-D33846?logo=youtube)](https://www.youtube.com/watch?v=aVA2FuR61B8)
 
 </div>
 
 ## 🏠 About
 **EgoTraj-Bench** is a real-world benchmark for robust trajectory prediction from ego-centric noisy observations. It grounds noisy first-person visual histories in clean bird’s-eye-view future trajectories, explicitly modeling real-world perceptual artifacts such as occlusions, ID switches, and tracking drift.
 
-## 📢 News
-- [ ] Add benchmark release and update logs.
 
 ## 📝 TODO List
 
