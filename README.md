@@ -29,16 +29,18 @@
 
 **BiFlow**, our dual-stream flow matching model, jointly denoises noisy ego-centric histories and predicts future trajectories via a shared latent representation, enhanced by an EgoAnchor mechanism for robust intent modeling.
 
-![Model Overview](assets/model.png)
+<p align="center">
+  <img src="assets/model.png" alt="Model Overview" width="95%">
+</p>
 
 
 ## 📝 TODO List
 
-- [ ] Release benchmark code and repository structure.
-- [ ] Release benchmark dataset and download instructions.
-- [ ] Release baseline models and evaluation scripts.
-- [ ] Add detailed documentation for data format, metrics, and leaderboard.
-- [ ] Add examples and tutorials for using EgoTraj-Bench.
+- [ ] Release benchmark code and repository structure. (by Mar. 2026)
+- [ ] Release benchmark dataset and download instructions. (by Mar. 2026)
+- [ ] Release baseline models and evaluation scripts. (by Mar. 2026)
+- [ ] Add detailed documentation for data format, metrics, and leaderboard. (by Apr. 2026)
+- [ ] Add examples and tutorials for using EgoTraj-Bench. (by Apr. 2026)
 
 ## 🙋‍♂️ Questions or Issues
 
