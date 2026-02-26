@@ -22,9 +22,10 @@
 
 </div>
 
-## 🏠 About
 
 ![EgoTraj Intuition](assets/intuition.gif)
+
+## 🏠 About
 
 **EgoTraj-Bench** is a real-world benchmark for robust trajectory prediction from ego-centric noisy observations. It grounds noisy first-person visual histories in clean bird’s-eye-view future trajectories, explicitly modeling real-world perceptual artifacts such as occlusions, ID switches, and tracking drift.
 
