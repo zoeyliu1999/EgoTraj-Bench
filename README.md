@@ -25,6 +25,10 @@
 
 ![EgoTraj Intuition](assets/intuition.gif)
 
+\* <span style="color:cyan">**Cyan**</span> highlights occlusion-induced gaps; <span style="color:red">**red**</span> indicates ID switches; <span style="color:limegreen">**green**</span> shows ego-centric perspective distortions. 
+
+\* **Dashed**: First person view derived; **Solid**: bird's eye view derived. 
+
 ## 🏠 About
 
 **EgoTraj-Bench** is a real-world benchmark for robust trajectory prediction from ego-centric noisy observations. It grounds noisy first-person visual histories in clean bird’s-eye-view future trajectories, explicitly modeling real-world perceptual artifacts such as occlusions, ID switches, and tracking drift.
