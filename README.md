@@ -38,7 +38,7 @@
 
 ## 🙋‍♂️ Questions or Issues
 
-If you encounter any problems or have questions about EgoTraj-Bench, please feel free to open an issue on the GitHub repo: `https://github.com/zoeyliu1999/EgoTraj-Bench/issues`.
+If you encounter any problems or have questions about EgoTraj-Bench, please feel free to [open an issue](https://github.com/zoeyliu1999/EgoTraj-Bench/issues) on the GitHub repo.
 
 ## 🔗 Citation
 
