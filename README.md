@@ -25,6 +25,12 @@
 ## 🏠 About
 **EgoTraj-Bench** is a real-world benchmark for robust trajectory prediction from ego-centric noisy observations. It grounds noisy first-person visual histories in clean bird’s-eye-view future trajectories, explicitly modeling real-world perceptual artifacts such as occlusions, ID switches, and tracking drift.
 
+![Benchmark Overview](assets/benchmark.png)
+
+**BiFlow**, our dual-stream flow matching model, jointly denoises noisy ego-centric histories and predicts future trajectories via a shared latent representation, enhanced by an EgoAnchor mechanism for robust intent modeling.
+
+![Model Overview](assets/model.png)
+
 
 ## 📝 TODO List
 
