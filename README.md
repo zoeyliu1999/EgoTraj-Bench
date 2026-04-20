@@ -23,7 +23,7 @@
 </div>
 
 
-![EgoTraj Intuition](https://www.jiayi-liu.cn/images/assets/egotraj_intuition.gif)
+![EgoTraj Intuition](assets/intuition.gif)
 
 \* <span style="color:cyan">**Cyan**</span> highlights occlusion-induced gaps; <span style="color:red">**red**</span> indicates ID switches; <span style="color:limegreen">**green**</span> shows ego-centric perspective distortions. 
 
