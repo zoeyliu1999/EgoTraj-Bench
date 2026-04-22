@@ -1,2 +1,24 @@
+# OS
 .DS_Store
-dataset/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Data
+data/
+raw/
+!data/_download_data.py
+!data/_download_ckpt.py
+
+# Experiment outputs
+results/
+wandb/
+checkpoints/
+
+# IDE
+.vscode/
+.idea/

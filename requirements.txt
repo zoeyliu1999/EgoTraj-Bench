@@ -1,0 +1,13 @@
+accelerate==1.5.2
+easydict==1.13
+einops==0.8.1
+ema_pytorch==0.7.7
+GitPython==3.1.44
+huggingface_hub==0.30.2
+matplotlib==3.8.3
+numpy==1.26.4
+PyYAML==6.0.2
+scipy==1.13.1
+tensorboardX==2.6.2.2
+torch==2.0.1
+tqdm==4.66.2
