@@ -14,12 +14,13 @@
 </p>
 
 <div id="top" align="center">
-
-[![arxiv](https://img.shields.io/badge/arXiv_2510.00405-red?logo=arxiv)](https://arxiv.org/abs/2510.00405)
-[![paper](https://img.shields.io/badge/Paper-PDF-0065D3?logo=readthedocs&logoColor=white)](https://arxiv.org/pdf/2510.00405?)
-[![code](https://img.shields.io/badge/Code-GitHub-black?logo=github)](https://github.com/zoeyliu1999/EgoTraj-Bench)
-[![dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-HuggingFace-orange)](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench)
-[![video-en](https://img.shields.io/badge/YouTube-D33846?logo=youtube)](https://www.youtube.com/watch?v=aVA2FuR61B8)
+  
+[![arXiv](https://img.shields.io/badge/arXiv-2510.00405-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2510.00405)
+[![Paper](https://img.shields.io/badge/Paper-PDF-0065D3?logo=readthedocs&logoColor=white)](https://arxiv.org/pdf/2510.00405)
+[![Code](https://img.shields.io/badge/Code-GitHub-181717?logo=github&logoColor=white)](https://github.com/zoeyliu1999/EgoTraj-Bench)
+[![Project](https://img.shields.io/badge/Project-Website-4285F4?logo=googlechrome&logoColor=white)](https://zoeyliu1999.github.io/EgoTrajBench/)
+[![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-HuggingFace-FFD21E)](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench)
+[![Video](https://img.shields.io/badge/Video-YouTube-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=zrlAEPs9PAc)
 
 </div>
 
