@@ -62,7 +62,7 @@
 
 ## 🚀 News
 
-- **[2026-07]** **L1 intermediate** core data released on [HuggingFace](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench/tree/main/L1-intermediate), with BEV GT, FPV detections/tracks, visibility metadata, robot paths, and an [**L1** application guide](README_L1.md).
+- **[2026-07]** **L1 intermediate** core data released on [HuggingFace](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench/tree/main/L1-intermediate), with BEV GT, FPV detections/tracks, visibility metadata, robot paths, and an [L1 application guide](README_L1.md).
 - **[2026-04]** Benchmark dataset released on [HuggingFace](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench), including **L2 processed** data and **L0 raw-data** access instructions.
 - **[2026-04]** Code for **BiFlow** model released, including training/evaluation scripts, examples, and checkpoint download workflow.
 
