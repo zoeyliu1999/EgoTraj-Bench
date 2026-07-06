@@ -349,8 +349,8 @@ See [Evaluation](#evaluation) for the full flag reference.
 - [x] Release benchmark dataset and download instructions.
 - [x] Release benchmark code and repository structure.
 - [x] Release pretrained checkpoints (T2FPV folds and EgoTraj-TBD).
-- [x] 2026-07-06: Release L1 intermediate core data with BEV GT, FPV detections/tracks, visibility metadata, robot paths, and checksums.
-- [x] 2026-07-06: Add L1 application guide for trajectory prediction, detection/tracking analysis, visibility/occlusion analysis, and raw-frame lookup.
+- [x] Release L1 intermediate core data and checksums.
+- [x] Add L1 application guide for downstream analysis.
 - [x] Add detailed documentation for data format, metrics, and leaderboard.
 - [x] Add examples and tutorials for using EgoTraj-Bench.
 
