@@ -37,6 +37,7 @@
 - [News](#-news)
 - [Project Structure](#-project-structure)
 - [Dataset](#-dataset)
+- [L1 Intermediate Guide](README_L1.md)
 - [Model](#-model)
 - [Quick Start](#-quick-start)
   - [Installation](#installation)
@@ -61,8 +62,9 @@
 
 ## 🚀 News
 
-- **[2025-04]** Benchmark dataset released on [HuggingFace](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench).
-- **[2025-04]** Code for BiFlow model released.
+- **[2026-07]** L1 intermediate core data released on [HuggingFace](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench/tree/main/L1-intermediate), with BEV GT, FPV detections/tracks, visibility metadata, robot paths, and an [L1 application guide](README_L1.md).
+- **[2025-04]** Benchmark dataset released on [HuggingFace](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench), including L2 processed data and L0 raw-data access instructions.
+- **[2025-04]** Code for BiFlow model released, including training/evaluation scripts, examples, and checkpoint download workflow.
 
 ---
 
@@ -137,10 +139,10 @@ The EgoTraj-Bench dataset is available on HuggingFace:
 | Level | Folder | Description | Size |
 |-------|--------|-------------|------|
 | **L2** | `L2-processed/` | Ready-to-use `.npz` files for training and evaluation | ~44 MB |
-| **L1** | `L1-intermediate/` | Frame-level FPV detections + BEV GT CSVs + matching results | Coming soon |
+| **L1** | `L1-intermediate/` | Core CSV/TXT intermediates: BEV GT, FPV detections/tracks, visibility metadata, robot paths | ~302 MB |
 | **L0** | `L0-raw/` | Link to [TBD raw dataset](https://kilthub.cmu.edu/authors/TBDLab_Admin/18437643) | ~170 GB |
 
-### Data Format
+### L2-processed Data Format
 
 Training and evaluation use the **L2-processed** (minimal reproducible) set.
 Each `.npz` file contains 4 arrays:
@@ -155,7 +157,18 @@ Each `.npz` file contains 4 arrays:
 7 features per timestep: `[x, y, orientation, img_x, img_y, valid_mask, agent_id]`
 
 > **Note**: L2-processed is sufficient for full training/evaluation reproduction.
-> L1-intermediate (FPV detections, BEV GT CSVs, matching results) will be released later for full pipeline analysis.
+> L1-intermediate is released for pipeline analysis, data debugging, and new data-processing variants.
+
+### L1 Intermediate Applications
+
+The L1 release is useful when you want to go beyond direct L2 training/evaluation:
+
+- **Trajectory prediction analysis**: compare noisy FPV-derived histories with clean BEV GT and inspect how final L2 samples are formed.
+- **Detection / tracking analysis**: study FPV bbox tracks, tracker IDs, ID switches, confidence, and BEV projection noise.
+- **Visibility / occlusion analysis**: use BEV GT projected into FPV with `px_count`, projected bboxes, and IoU metadata.
+- **BEV-FPV alignment**: map intermediate rows back to raw TBD frames using frame IDs, timestamps, and robot paths.
+
+See [README_L1.md](README_L1.md) for the full L1 data guide and application tracks.
 
 ### Quick Example
 
@@ -336,6 +349,8 @@ See [Evaluation](#evaluation) for the full flag reference.
 - [x] Release benchmark dataset and download instructions.
 - [x] Release benchmark code and repository structure.
 - [x] Release pretrained checkpoints (T2FPV folds and EgoTraj-TBD).
+- [x] 2026-07-06: Release L1 intermediate core data with BEV GT, FPV detections/tracks, visibility metadata, robot paths, and checksums.
+- [x] 2026-07-06: Add L1 application guide for trajectory prediction, detection/tracking analysis, visibility/occlusion analysis, and raw-frame lookup.
 - [x] Add detailed documentation for data format, metrics, and leaderboard.
 - [x] Add examples and tutorials for using EgoTraj-Bench.
 
