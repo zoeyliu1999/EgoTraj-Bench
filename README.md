@@ -37,7 +37,6 @@
 - [News](#-news)
 - [Project Structure](#-project-structure)
 - [Dataset](#-dataset)
-- [L1 Intermediate Guide](README_L1.md)
 - [Model](#-model)
 - [Quick Start](#-quick-start)
   - [Installation](#installation)
