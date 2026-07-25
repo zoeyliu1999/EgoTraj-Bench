@@ -24,6 +24,8 @@
 
 </div>
 
+> 📖 中文版本: [README_CN.md](README_CN.md)
+
 
 ![EgoTraj Intuition](assets/intuition.gif)
 
