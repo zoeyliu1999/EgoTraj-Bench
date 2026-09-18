@@ -16,7 +16,9 @@ Expected remote layout:
     T2FPV-zara2/
       ...
     EgoTraj-TBD/
-      ...
+      config_updated.yml
+      models-v1.1/checkpoint_best.pt
+      models-legacy/checkpoint_best.pt
 
 Local output layout (default):
   checkpoints/<ModelName>/
@@ -46,6 +48,11 @@ DEFAULT_RELEASES = [
     "EgoTraj-TBD",
 ]
 
+# Remote checkpoint subdirectory per release. EgoTraj-TBD was retrained on the
+# current data release; the superseded weights remain under "models-legacy".
+CKPT_SUBDIR = {"EgoTraj-TBD": "models-v1.1"}
+DEFAULT_CKPT_SUBDIR = "models"
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -64,6 +71,13 @@ def parse_args() -> argparse.Namespace:
         help="HF token for gated/private repos (optional for public repo)",
     )
     parser.add_argument(
+        "--releases",
+        nargs="+",
+        default=DEFAULT_RELEASES,
+        choices=DEFAULT_RELEASES,
+        help="Subset of releases to download (default: all)",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Print planned downloads without writing files",
@@ -79,8 +93,9 @@ def release_files(release_name: str) -> Iterable[tuple[str, Path]]:
         f"models/{release_name}/config_updated.yml",
         Path("config_updated.yml"),
     )
+    subdir = CKPT_SUBDIR.get(release_name, DEFAULT_CKPT_SUBDIR)
     yield (
-        f"models/{release_name}/models/checkpoint_best.pt",
+        f"models/{release_name}/{subdir}/checkpoint_best.pt",
         Path("models/checkpoint_best.pt"),
     )
 
@@ -104,7 +119,7 @@ def main() -> None:
     args = parse_args()
     output_root: Path = args.output_root
 
-    releases = list(DEFAULT_RELEASES)
+    releases = list(args.releases)
 
     print("Source repo:", args.repo_id)
     print("Output root:", output_root.resolve())
