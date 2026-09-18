@@ -310,12 +310,14 @@ Checkpoints are hosted on HuggingFace under
 
 | Model | Dataset | Fold | Release Name | ADE (K=20) | FDE (K=20) | Checkpoint |
 |-------|---------|------|-------------|------------|------------|------------|
-| BiFlow | EgoTraj-TBD | tbd | `EgoTraj-TBD` | 0.19 | 0.27 | [HF](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench/tree/main/models/EgoTraj-TBD) |
+| BiFlow | EgoTraj-TBD | tbd | `EgoTraj-TBD` | 0.31 <sup>†</sup> | 0.45 <sup>†</sup> | [HF](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench/tree/main/models/EgoTraj-TBD) |
 | BiFlow | T2FPV-ETH | eth | `T2FPV-eth` | 0.66 | 0.85 | [HF](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench/tree/main/models/T2FPV-eth) |
 | BiFlow | T2FPV-ETH | hotel | `T2FPV-hotel` | 0.49 | 0.59 | [HF](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench/tree/main/models/T2FPV-hotel) |
 | BiFlow | T2FPV-ETH | univ | `T2FPV-univ` | 0.91 | 1.08 | [HF](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench/tree/main/models/T2FPV-univ) |
 | BiFlow | T2FPV-ETH | zara1 | `T2FPV-zara1` | 0.42 | 0.58 | [HF](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench/tree/main/models/T2FPV-zara1) |
 | BiFlow | T2FPV-ETH | zara2 | `T2FPV-zara2` | 0.50 | 0.62 | [HF](https://huggingface.co/datasets/ZoeyLIU1999/EgoTraj-Bench/tree/main/models/T2FPV-zara2) |
+
+<sub><sup>†</sup> Updated for the current release of the EgoTraj-TBD data. The previously reported numbers for this fold (0.19 ADE / 0.27 FDE, K=20) were obtained on an earlier dataset version and are **outdated**; training from scratch with the currently released data and code yields ≈ 0.305 ADE / 0.453 FDE. This affects the absolute values on EgoTraj-TBD only and does not change the paper's conclusions: BiFlow still outperforms the compared methods, consistent with all five T2FPV-ETH splits.</sub>
 
 ### Downloading
 
